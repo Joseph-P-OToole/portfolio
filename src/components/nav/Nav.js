@@ -3,6 +3,7 @@ import React,{useState} from 'react';
 import Link from './Link';
 import MobileNav from './MobileNav';
 import './Nav.css';
+import Logo from '../../assets/logos/logo.png';
 
 const Nav = () => {
   const [buttonState, toggleButtonState] = useState('closed');
@@ -37,6 +38,9 @@ const Nav = () => {
 
   return (
     <div className='nav'>
+      <a href='#' className='logoContainer'>
+        <img src={Logo} alt='logo' className='logo'/>
+      </a>
       <Link type='desktopNavLink link' reference='#' name='Home' />
       <Link type='desktopNavLink link' reference='#skills' name='Skills' />
       <Link type='desktopNavLink link' reference='#hire' name='Hire' />

@@ -1,13 +1,12 @@
 
 #skills {
   width: 100%;
-  background: var(--colorPrimary);
-  height: 100vh;
   min-height: fit-content;
-  max-height: 800px;
   padding: 4.5rem 1rem 1rem 1rem;
   display: grid;
-  grid-template-rows: repeat(3, auto)
+  grid-template-rows: repeat(3, auto);
+  overflow: hidden;
+  border-top: 2px solid var(--colorAccent);
 }
 
 .skillShotContainer {
@@ -24,7 +23,7 @@
 .iconPanel {
   grid-row: 2;
   width: 90%;
-  background: #111;
+  background: var(--panelBkg);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: .5rem auto;

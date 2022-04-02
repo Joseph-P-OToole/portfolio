@@ -1,6 +1,6 @@
 :root {
   --colorBkg: black;
-  --panelBkg: #111;
+  --panelBkg: radial-gradient(circle, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.98) 100%);
   --colorPrimary: #003459;
   --colorSecondary: #00171F;
   --colorTertiary: #007EA7;
@@ -14,7 +14,7 @@ body {
   width: 100%;
   max-width: 1800px;
   font-family: 'Source Sans Pro', sans-serif;
-  background: var(--colorPrimary);
+  background: linear-gradient(to right, var(--colorSecondary), var(--colorPrimary), var(--colorSecondary));
   color: var(--fontPrimary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -2,12 +2,13 @@
 .iconWrapper {
   width: 1.7rem;
   height: 1.7rem;
-  background: var(--colorAccent);
+	background: radial-gradient(circle, #fffff0 0%, #00A8E8 80%);
   margin: .5rem auto;
   padding: .2rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
+  border: 2px solid var(--colorAccent);
 }
 
 .iconWrapper:hover {

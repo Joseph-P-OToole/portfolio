@@ -1,7 +1,7 @@
 
 #hire {
-  min-height: 100vh;
-  max-height: 800px;
+  min-height: 600px;
+  width: 100%;
   background-color: var(--colorSecondary);
   background-image: url('../../assets/images/codeBkg.png');
   background-size: cover;
@@ -10,11 +10,10 @@
   background-repeat: no-repeat;
   background-blend-mode: screen;
   padding: 4rem 0 .5rem 0;
+  border-top: 2px solid var(--colorAccent);
 }
 
 .contentContainer {
-  min-height: 80vh;
-  max-height: 800px;
   width: 95%;
   max-width: 800px;
   margin: 0 auto .5rem auto;
