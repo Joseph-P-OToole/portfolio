@@ -210,4 +210,4 @@ const Skills = (props) => {
 	)
 }
 
-export default Skills
+export default Skills;

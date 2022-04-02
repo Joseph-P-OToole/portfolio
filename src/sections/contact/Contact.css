@@ -33,6 +33,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  -o-background-attachment: scroll;
   border: 1px solid var(--colorBkg);
   padding: 1rem 2rem;
   gap: .3rem;

@@ -14,7 +14,7 @@ body {
   width: 100%;
   max-width: 1800px;
   font-family: 'Source Sans Pro', sans-serif;
-  background: linear-gradient(to right, var(--colorSecondary), var(--colorPrimary), var(--colorSecondary));
+  background: linear-gradient(to right, #000, var(--colorPrimary), #000);
   color: var(--fontPrimary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -31,6 +31,13 @@ code {
   padding: 0;
   border: 0;
   margin: 0;
+}
+
+.oi {
+  font-size: 2rem;
+  color: var(--fontSecondary);
+  width: 30px;
+  height: 30px;
 }
 
 html {
