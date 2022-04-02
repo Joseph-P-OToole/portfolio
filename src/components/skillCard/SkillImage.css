@@ -1,0 +1,21 @@
+
+.skillShotImageContainer {
+  width: 95%;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1;
+}
+
+.skillImage {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+@media screen and (min-width: 768px) {
+  .skillShotImageContainer {
+    grid-column: 1 / span 2;
+  }
+}

@@ -1,0 +1,72 @@
+
+#contact {
+  min-height: calc(100vh - 4rem);
+  background: url('../../assets/images/contactBkg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid var(--colorAccent);
+}
+
+.contactContent {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 .5rem;
+  background: var(--colorBkg);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.contactIconPanel {
+  width: 90%;
+  background: url('../../assets/images/contactBkg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border: 1px solid var(--colorBkg);
+  padding: 1rem 2rem;
+  gap: .3rem;
+  display: flex;
+  margin: 1rem auto;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+  border-top-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.contactLink {
+  border: 4px solid var(--colorBkg);
+  border-radius: 50%;
+  background: var(--colorAccent);
+}
+
+.contactIcon {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  #contact {
+    min-height: 0;
+    height: 500px;
+    width: 50%;
+    float: left;
+  }
+
+  .contactContent {
+    min-height: 100%;
+    height: 100%;
+    padding: 4rem 2rem;
+  }
+}

@@ -1,0 +1,52 @@
+
+.skillContent {
+  color: var(--fontPrimary);
+  grid-row: 2;
+  width: 88%;
+  justify-self: center;
+}
+
+.skillTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: left;
+  border-bottom: .2rem solid var(--colorAccent);
+}
+
+.skillDesc {
+  text-align: left;
+}
+
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.expandButton {
+  font-weight: 700;
+}
+
+.expandButton:hover {
+  cursor: pointer;
+}
+
+.sampleLink {
+  height: 1.3rem;
+  text-decoration: none;
+  color: var(--colorAccent);
+}
+
+.linkPlaceHolder {
+  height: 1.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .skillContent {
+    grid-column: 3;
+    grid-row: 1;
+    align-self: center;
+  }
+}

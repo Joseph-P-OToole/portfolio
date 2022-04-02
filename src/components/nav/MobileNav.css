@@ -1,0 +1,32 @@
+
+.mobileNav {
+  width: 100%;
+  display: flex;
+  background: var(--colorPrimary);
+  flex-flow: column nowrap;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-bottom: 2px solid var(--colorTertiary);
+  box-shadow: -4px 0px 8px 0px rgba(0, 0, 0, 0.9);
+  z-index: -1;
+}
+
+.inactive {
+  transition: .6s transform ease-in-out;
+  transform: translateY(-100%);
+}
+
+.active {
+  transition: .6s transform ease-in-out;
+  transform: translateY(9.7rem);
+}
+
+@media screen and (min-width: 767.9px) {
+  .mobileNav {
+    display: none;
+  }
+}

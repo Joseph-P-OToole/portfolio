@@ -1,0 +1,109 @@
+
+#skills {
+  width: 100%;
+  background: var(--colorPrimary);
+  height: 100vh;
+  min-height: fit-content;
+  max-height: 800px;
+  padding: 4.5rem 1rem 1rem 1rem;
+  display: grid;
+  grid-template-rows: repeat(3, auto)
+}
+
+.skillShotContainer {
+  max-width: 100%;
+  min-height: 380px;
+  max-height: 100%;
+  grid-row: 1;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  overflow: hidden;
+}
+
+.iconPanel {
+  grid-row: 2;
+  width: 90%;
+  background: #111;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: .5rem auto;
+  border: 1px solid var(--colorBkg);
+  border-top-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  align-self: center;
+  gap: .5rem;
+  padding: 1rem .5rem;
+  overflow: hidden;
+  margin-bottom: .5rem;
+}
+
+.skillIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.skillIcon:hover {
+  transition: 0.2s transform ease-in-out;
+  transform: scale(1.1);
+}
+
+.skillButtonWrapper {
+  justify-self: center;
+  width: 40px;
+  height: 40px;
+  padding: 0.2rem;
+  border-bottom: 0.2rem solid transparent;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.skillButtonWrapper:hover {
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+  transform: scale(1.05);
+  background: #0009;
+}
+
+.highlight {
+  transition: .3s all ease-in-out;
+  transform: scale(1.05);
+  background: #0009;
+  border-bottom: 0.2rem solid var(--colorAccent);
+}
+
+
+@media screen and (min-width: 768px) {
+  #skills {
+    min-height: calc(50vh - 4rem);
+    max-height: 500px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .skillShotContainer {
+    grid-template-rows: repeat(1, auto);
+    grid-template-columns: repeat(3, auto);
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    z-index: 1;
+  }
+
+  .iconPanel {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    z-index: 4;
+    justify-self: center;
+  }
+
+  .skillButtonWrapper {
+    justify-self: center;
+    width: 60px;
+    height: 60px;
+  }
+
+  .skillIcon {
+    width: 50px;
+    height: 50px;
+  }
+}

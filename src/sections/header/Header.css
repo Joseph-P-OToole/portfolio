@@ -1,0 +1,19 @@
+
+#header {
+  height: 34vh;
+  min-height: 300px;
+  background-color: var(--colorAccent);
+  background-image: url('../../assets/images/headerBkg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: hard-light, darken;
+}
+
+@media screen and (min-width: 768px) {
+  #header {
+    height: 500px;
+    width: 50%;
+    float: left;
+  }
+}

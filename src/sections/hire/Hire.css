@@ -1,0 +1,65 @@
+
+#hire {
+  min-height: 100vh;
+  max-height: 800px;
+  background-color: var(--colorSecondary);
+  background-image: url('../../assets/images/codeBkg.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
+  padding: 4rem 0 .5rem 0;
+}
+
+.contentContainer {
+  min-height: 80vh;
+  max-height: 800px;
+  width: 95%;
+  max-width: 800px;
+  margin: 0 auto .5rem auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: .3rem;
+  padding: 1rem 0;
+}
+
+.textContainer {
+  max-width: 400px;
+  display: flex;
+  gap: 1rem;
+  padding: .5rem 1rem;
+  text-align: left;
+  border-radius: 4px;
+  background: var(--panelBkg);
+  border: 1px solid var(--colorBkg);
+  box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.642);
+}
+
+.hireActionLink {
+  display: none;
+}
+
+#hire > Link {
+  color: var(--colorBkg);
+}
+
+@media screen and (min-width: 768px) {
+  #hire {
+    min-height: 50vh;
+    padding: 4rem 2rem;
+  }
+
+  .contentContainer {
+    min-height: 30vh;
+    flex-flow: row wrap;
+  }
+
+  .textContainer {
+    width: 40%;
+    height: 200px;
+    align-items: center;
+  }
+}
