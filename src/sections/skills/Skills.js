@@ -89,7 +89,6 @@ const Skills = (props) => {
 		return buttons;
 	}// getButtons
 
-
 	const [skillImage, setSkillImage] = useState(AdobeIllustratorImage);
 	const getImage = (name) => {
 		switch(name) {
@@ -148,7 +147,7 @@ const Skills = (props) => {
       case 'React':
         return 'This website was created using React. It is styled with custom CSS and includes custom CSS animations.';
       case 'Sql':
-        return 'This is a guitar store I created using .Net core and SQL server. Users can create an account, login and view products. Admin\'s can add, delete, and edit products as well as upload multiple images for each product.';
+        return 'This is a guitar store I created using .Net core and SQL server. Users can create an account, login and view products. Admins can add, delete, and edit products as well as upload multiple images for each product.';
       default:
         return 'There seems to be something wrong please select another skill to view my work';
     }
@@ -188,11 +187,15 @@ const Skills = (props) => {
 
 	const switchSkill = (skill) => {
 		setAnim('skillShotContainer slideOutLeft');
+		// wait until animation is done
 		setTimeout(() => {
 			setSkillName(skill);
 			setSkillText(getText(skill));
 			setSkillImage(getImage(skill));
 			setSkillLink(getLink(skill));
+		}, 300);
+		// wait until content loads
+		setTimeout(() => {
 			setAnim('skillShotContainer slideFromRight');
 		}, 300);
 	}// switchSkill

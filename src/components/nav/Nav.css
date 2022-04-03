@@ -4,7 +4,7 @@
   max-width: 1800px;
   height: 4rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   background-color: black;
   color: white;

@@ -3,7 +3,6 @@ import React from 'react';
 import './Contact.css';
 import GitHub from '../../assets/icons/github.png';
 import Email from '../../assets/icons/email.png';
-import Indeed from '../../assets/icons/indeed.png';
 import LinkedIn from '../../assets/icons/linkedin.png';
 
 const Contact = () => {
@@ -17,9 +16,6 @@ const Contact = () => {
           </a>
           <a className='contactLink' href="https://github.com/Joseph-P-OToole">
             <img className='contactIcon' src={GitHub} title='GitHub' alt='GitHub' />
-          </a>
-          <a className='contactLink' href="https://github.com/Joseph-P-OToole">
-            <img className='contactIcon' src={Indeed} title='Indeed' alt='Indeed' />
           </a>
           <a className='contactLink' href="https://www.linkedin.com/in/joseph-o-toole-786469236/">
             <img className='contactIcon' src={LinkedIn} title='LinkedIn' alt='LinkedIn' />
