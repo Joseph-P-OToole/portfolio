@@ -22,7 +22,7 @@
 
 .active {
   transition: .6s transform ease-in-out;
-  transform: translateY(9.85rem);
+  transform: translateY(11.2rem);
 }
 
 @media screen and (min-width: 767.9px) {

@@ -6,8 +6,8 @@ import SkillImage from '../skillCard/SkillImage';
 const LightBox = (props) => {
   return (
     <div id={props.propId} onClick={props.lightBoxToggler}>
-      <SkillImage lightBoxToggler={props.lightBoxToggler} source={props.source} lightBoxContent={props.lightBoxContent} />
-      <h4>CLOSE</h4>
+      <SkillImage lightBoxToggler={props.lightBoxToggler} source={props.source} lightBoxContent={props.lightBoxContent} type='fullScreen' />
+      <h4 id="closeLabel">CLOSE</h4>
     </div>
   );
 }

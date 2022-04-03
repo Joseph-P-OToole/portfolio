@@ -33,11 +33,13 @@ code {
   margin: 0;
 }
 
-.oi {
-  font-size: 2rem;
-  color: var(--fontSecondary);
-  width: 30px;
-  height: 30px;
+.disableSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 html {

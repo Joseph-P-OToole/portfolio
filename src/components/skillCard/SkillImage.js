@@ -9,8 +9,10 @@ const SkillImage = (props) => {
     props.lightBoxContent(source);
   }
 
+  let classes='skillShotImageContainer ' + props.type;
+
   return (
-    <div className='skillShotImageContainer' onClick={() => clickHandler(props.source)}>
+    <div className={classes} onClick={() => clickHandler(props.source)}>
       <img className='skillImage' src={props.source} alt={props.altText} title={props.altText} />
     </div>
   )

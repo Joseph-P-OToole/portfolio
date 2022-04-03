@@ -61,6 +61,16 @@
   height: 40px;
 }
 
+@media screen and (max-width: 1000px) {
+  #contact {
+    background-attachment: initial;
+  }
+
+  .contactIconPanel {
+    background-attachment: initial;
+  }
+}
+
 @media screen and (min-width: 768px) {
   #contact {
     min-height: 500px;

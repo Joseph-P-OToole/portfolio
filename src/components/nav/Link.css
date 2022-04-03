@@ -16,8 +16,22 @@
   line-height: 1rem;
 }
 
+.desktopNavLink {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: .5rem;
+}
+
 .mobileLink {
-  margin: .8rem 0;
+  width: auto;
+  margin: .2rem 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  text-align: left;
 }
 
 @media screen and (max-width: 767.9px) {

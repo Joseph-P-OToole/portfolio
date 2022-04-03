@@ -4,6 +4,11 @@ import Link from './Link';
 import MobileNav from './MobileNav';
 import './Nav.css';
 import Logo from '../../assets/logos/logo.png';
+import Earth from '../../assets/icons/earth.png';
+import Code from '../../assets/icons/code.svg';
+import PuzzlePiece from '../../assets/icons/puzzle-piece.svg';
+import Cog from '../../assets/icons/cog.svg';
+import Info from '../../assets/icons/info.svg';
 
 const Nav = () => {
   const [buttonState, toggleButtonState] = useState('closed');
@@ -41,11 +46,11 @@ const Nav = () => {
       <a href='#' className='logoContainer'>
         <img src={Logo} alt='logo' className='logo'/>
       </a>
-      <Link type='desktopNavLink link' reference='#' name='Home' />
-      <Link type='desktopNavLink link' reference='#skills' name='Skills' />
-      <Link type='desktopNavLink link' reference='#hire' name='Hire' />
-      <Link type='desktopNavLink link' reference='#about' name='About' />
-      <Link type='desktopNavLink link' reference='#contact' name='Contact' />
+      <Link icon={Earth} type='desktopNavLink link' reference='#' name='Home' />
+      <Link icon={Code} type='desktopNavLink link' reference='#skills' name='Skills' />
+      <Link icon={PuzzlePiece} type='desktopNavLink link' reference='#hire' name='Hire' />
+      <Link icon={Cog} type='desktopNavLink link' reference='#about' name='About' />
+      <Link icon={Info} type='desktopNavLink link' reference='#contact' name='Contact' />
       <MobileNav state={navState} handler={toggleNav} />
       <div onClick={() => toggleNav()} className='navToggler'>
         <div className={bar1Class}></div>

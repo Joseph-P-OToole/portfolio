@@ -1,0 +1,18 @@
+
+.decoIconWrapper {
+  width: 40px;
+  height: 40px;
+  background: var(--fontPrimary);
+  grid-column: 1;
+  justify-self: center;
+  align-self: end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.decoIcon {
+  width: 70%;
+  height: 70%;
+}

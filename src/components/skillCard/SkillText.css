@@ -2,7 +2,6 @@
 .skillContent {
   color: var(--fontPrimary);
   grid-row: 2;
-  width: 88%;
   justify-self: center;
 }
 

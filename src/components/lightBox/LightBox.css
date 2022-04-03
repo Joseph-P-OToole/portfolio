@@ -8,7 +8,7 @@
   max-width: 1200px;
   margin: 0 auto;
   height: calc(100vh - 4rem);
-  padding: 4rem 1rem;
+  padding: 8rem 1rem;
   position: fixed;
   display: flex;
   flex-flow: column nowrap;
@@ -16,4 +16,8 @@
   justify-content: center;
   background: rgba(0, 0, 0, 0.95);
   z-index: 12;
+}
+
+#closeLabel:hover {
+  cursor: pointer;
 }
