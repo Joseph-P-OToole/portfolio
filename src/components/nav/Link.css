@@ -16,6 +16,12 @@
   line-height: 1rem;
 }
 
+.link:hover {
+  cursor: pointer;
+  transition: 0.3s color ease-in-out;
+  color: var(--colorAccent);
+}
+
 .desktopNavLink {
   display: flex;
   flex-flow: row nowrap;
@@ -23,15 +29,32 @@
   gap: .5rem;
 }
 
-.mobileLink {
-  width: auto;
-  margin: .2rem 0;
+.mobileLinkContainer {
+  width: 90%;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
+  margin: .5rem 0;
+}
+
+.mobileLink {
+  width: 100%;
+  margin: .2rem 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
   gap: .5rem;
   text-align: left;
+}
+
+.actionLink {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 0 auto;
+  gap: .5rem;
 }
 
 @media screen and (max-width: 767.9px) {

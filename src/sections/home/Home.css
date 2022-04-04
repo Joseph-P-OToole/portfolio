@@ -23,17 +23,13 @@
   max-width: 80%;
   color: var(--colorAccent);
   text-transform: lowercase;
-  font-weight: 100;
   transform: translateY(-4rem);
   font-family: 'Shadows Into Light', cursive;
 }
 
-Link {
-  height: 30%;
-}
-
 #Layer_1 {
   width: 80%;
+  max-height: 30vh;
   min-height: 400px;
   fill: var(--colorAccent);
 }
@@ -101,6 +97,7 @@ Link {
 
 @media screen and (min-width: 768px) {
   #home {
+    width: 50%;
     height: 500px;
   }
 }

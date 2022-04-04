@@ -16,7 +16,7 @@ const Link = (props) => {
             </a>
   }
   return (
-    <div className={props.type}>
+    <div className={props.type + 'Container'}>
       {link}
     </div>
   )

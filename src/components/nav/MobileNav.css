@@ -2,7 +2,7 @@
 .mobileNav {
   width: 100%;
   display: flex;
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.98) 100%);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0.99) 100%);
   flex-flow: column nowrap;
   position: absolute;
   align-items: center;
@@ -22,7 +22,7 @@
 
 .active {
   transition: .6s transform ease-in-out;
-  transform: translateY(11.2rem);
+  transform: translateY(11.5rem);
 }
 
 @media screen and (min-width: 767.9px) {

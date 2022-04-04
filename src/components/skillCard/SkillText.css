@@ -3,6 +3,7 @@
   color: var(--fontPrimary);
   grid-row: 2;
   justify-self: center;
+  max-width: 80vw;
 }
 
 .skillTitle {

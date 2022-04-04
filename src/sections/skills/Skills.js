@@ -82,7 +82,7 @@ const Skills = (props) => {
 	const getButtons = () => {
 		let buttons = [];
 		for(let i = 0; i < skillNames.length; i++) {
-			buttons.push(<div className={getIconState(skillNames[i])}>
+			buttons.push(<div key={'icon' + i} className={getIconState(skillNames[i])}>
 											<img className='skillIcon disableSelect' onClick={() => switchSkill(skillNames[i])} src={getIcon(skillNames[i])} alt={skillNames[i]} />
 									</div>);
 		}

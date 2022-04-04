@@ -8,10 +8,14 @@
   grid-row: 1;
 }
 
+.thumbnail {
+  max-width: 65vw;
+}
+
 .thumbnail:hover {
   cursor: pointer;
   transition: 0.3s transform ease-in-out;
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 
 .fullScreen {
@@ -26,5 +30,11 @@
 @media screen and (min-width: 768px) {
   .skillShotImageContainer {
     grid-column: 1 / span 2;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .thumbnail {
+    max-width: 100%;
   }
 }

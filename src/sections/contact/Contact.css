@@ -42,6 +42,7 @@
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-around;
+  border: 3px solid var(--colorAccent);
   border-top-left-radius: 24px;
   border-bottom-right-radius: 24px;
 }
@@ -54,6 +55,13 @@
   justify-content: center;
   align-items: center;
   padding: 0.2rem;
+  box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.contactLink:hover {
+  cursor: pointer;
+  transition: 0.3s transform ease-in-out;
+  transform: scale(1.05);
 }
 
 .contactIcon {

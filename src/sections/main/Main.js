@@ -1,5 +1,4 @@
 
-import './Main.css';
 import React,{useState} from 'react';
 import Nav from '../../components/nav/Nav';
 import LightBox from '../../components/lightBox/LightBox'
